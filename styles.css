@@ -1,0 +1,41 @@
+
+/* Estilos para a vitrine de produtos */
+.card {
+    background-color: #E0F7FA; /* Azul pastel */
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #FF69B4; /* Rosa */
+}
+
+.card-text {
+    color: #FFD700; /* Amarelo */
+}
+
+.btn-primary {
+    background-color: #ADD8E6; /* Azul pastel */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #87CEEB; /* Azul claro */
+}
+
+/* Centralizar e alinhar verticalmente os itens do menu */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - EuQueFiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8e1; /* Fundo amarelo pastel */
+        }
+        .navbar {
+            background-color: #f5e1e1; /* Rosa pastel */
+        }
+        .navbar-brand img {
+            max-height: 60px;
+            margin-right: 10px;
+        }
+        .cart-icon {
+            font-size: 1.5rem;
+            color: #4169e1; /* Azul pastel */
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffd700; /* Amarelo pastel */
+        }
+        .cart-icon:hover {
+            transform: scale(1.2);
+        }
+        .navbar-nav .nav-link {
+            color: #4169e1; /* Azul pastel */
+            padding-right: 2rem; /* Espaçamento entre os itens do menu */
+            position: relative;
+        }
+ 
+        .form-control {
+            border-color: #4169e1; /* Azul pastel */
+        }
+        .form-control:focus {
+            border-color: #4169e1; /* Azul pastel */
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #4169e1; /* Azul pastel */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #ffd700; /* Amarelo pastel */
+            color: #fff;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 0;
+            margin-top: 100px; /* Espaçamento do topo */
+        }
+        footer a {
+            color: #ecf0f1;
+        }
+        footer a:hover {
+            color: #ffd700; /* Amarelo pastel */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Imagem à esquerda -->
+            <a class="navbar-brand" href="#">
+                <img src="EU_QUE_FIZ-removebg-preview.png" alt="Logo">
+            </a>
+            
+            <!-- Botão do menu responsivo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ícone do carrinho no canto superior direito -->
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <div class="container mt-5">
+        <h1 class="text-center">Entre em Contato Conosco</h1>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Informações de Contato</h5>
+                    <p>Endereço: Av. Exemplo, 123, Cidade Exemplo</p>
+                    <p>Telefone: (00) 1234-5678</p>
+                    <p>E-mail: contato@example.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Siga-nos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/seu_perfil_instagram" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/seu_perfil_facebook" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/seu_perfil_twitter" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 EuQueFiz. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

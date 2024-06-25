@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+    /* styles.css */
+body {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    background-color: #f5e1e1; /* Rosa pastel */
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.text-right strong {
+    color: #4169e1; /* Azul pastel */
+}
+
+h2, h4 {
+    color: #4169e1; /* Azul pastel */
+}
+
+.btn-primary {
+    background-color: #4169e1; /* Azul pastel */
+    border-color: #4169e1;
+}
+
+.btn-primary:hover {
+    background-color: #375a7f; /* Azul pastel escuro */
+    border-color: #375a7f;
+}
+
+</style>
+
+
+    <div class="container mt-5">
+        <h2 class="text-center">Finalizar Compra</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Itens no Carrinho</h4>
+                <ul id="cart-items" class="list-group mb-4">
+                    <!-- Itens do carrinho serão adicionados aqui -->
+                </ul>
+                <div class="text-right">
+                    <strong>Total: R$<span id="total-price">0.00</span></strong>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Dados de Entrega</h4>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Endereço</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Cidade</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Estado</label>
+                        <input type="text" class="form-control" id="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">CEP</label>
+                        <input type="text" class="form-control" id="zip" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Método de Pagamento</label>
+                        <select class="form-control" id="payment-method" required>
+                            <option value="credit-card">Cartão de Crédito</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </div>
+                    <div id="credit-card-info" class="d-none">
+                        <div class="form-group">
+                            <label for="card-number">Número do Cartão</label>
+                            <input type="text" class="form-control" id="card-number">
+                        </div>
+                        <div class="form-group">
+                            <label for="card-expiry">Validade</label>
+                            <input type="text" class="form-control" id="card-expiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="card-cvc">CVC</label>
+                            <input type="text" class="form-control" id="card-cvc">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirmar Compra</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>
